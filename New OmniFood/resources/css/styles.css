@@ -1,0 +1,77 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html{
+	background-color: white;
+	color: #1f1f1f;
+	font-family: 'Lobster', cursive;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+}
+
+.row{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+header{
+	background-image: linear-gradient(rgba(169, 166, 166, 0.68),rgba(169, 166, 166, 0.68)), url(img/event-hero.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	
+}
+
+.hero-textbox{
+	position:absolute;
+	width:1140px;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+
+}
+
+h1{
+	margin: 0;
+	color: #1f1f1f;
+	font-size: 200%;
+	font-weight:400;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	word-spacing: 3px;
+	margin-bottom: 20px;
+}
+
+.button-full:hover, .button-full: active, .button-ghost:hover,
+.button-ghost: active{
+	background-color:yellow;
+}
+
+.button-full {
+	display:inline-block;
+	padding: 10px 30px;
+	font-weight:400;
+	text-decoration:none;
+	background-color:#000000;
+	border-radius:200px;
+	color:white;
+	border: 1px solid #000000;
+
+}
+
+.button-ghost {
+	display:inline-block;
+	padding: 10px 30px;
+	font-weight:400;
+	text-decoration:none;
+	border-radius:200px;
+	color:white;
+	border: 1px solid #000000;
+	margin-left: 15px;
+
+}
