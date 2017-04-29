@@ -1,0 +1,225 @@
+
+/*---------------------------------------------------------*/
+/*BASIC SETUP OF THE WHOLE WEBSITE*/
+/*These are components that will affect the entire website rules*/
+/*---------------------------------------------------------*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html{
+	background-color: white;
+	color: #1f1f1f;
+	font-family: 'Lobster', cursive;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+}
+
+/*---------------------------------------------------------*/
+/*REUSABLE COMPONENTS*/
+
+/*---------------------------------------------------------*/
+.row{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.section{
+	padding: 80px 0 ;
+}
+.box{
+	padding: 1%;
+}
+
+/*------HEADINGS------*/
+
+h1{
+	margin: 0;
+	color: #1f1f1f;
+	font-size: 200%;
+	font-weight:400;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	word-spacing: 3px;
+	margin-bottom: 20px;
+}
+
+h2{
+	font-weight:400;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	font-size: 180%;
+	word-spacing: 2px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+h2:after{
+	display:block;
+	height: 2px;
+	background-color:  gray;
+	content: " ";
+	width:100px;
+	margin: 0  auto;
+	margin-top: 30px;
+}
+
+h3{
+	font-weight:400;
+	text-transform:uppercase;
+	font-size: 110%;
+	margin-bottom: 15px;
+}
+
+
+/*-----PARAGRAPHS----*/
+.long-copy{
+	line-height: 145%;
+	width: 70%;
+	margin-left: 15%;
+
+
+}
+
+.box p {
+	font-size: 90%;
+	line-height: 145%;
+}
+
+
+/*-----ICONS----*/
+.icon-big {
+	font-size: 400%;
+	display: block;
+	color: grey;
+	margin-bottom: 10px;
+}
+
+
+/*-----BUTTONS----*/
+
+.button-full:hover, .button-full: active, .button-ghost:hover,
+.button-ghost: active{
+	background-color:yellow;
+}
+
+.button-full {
+	display:inline-block;
+	padding: 10px 30px;
+	font-weight:400;
+	text-decoration:none;
+	background-color:#000000;
+	border-radius:200px;
+	color:white;
+	border: 1px solid #000000;
+
+}
+
+.button-ghost {
+	display:inline-block;
+	padding: 10px 30px;
+	font-weight:400;
+	text-decoration:none;
+	border-radius:200px;
+	color:white;
+	border: 1px solid #000000;
+	margin-left: 15px;
+
+}
+
+
+/*-------HEADER COMPONENTS-------*/
+
+
+header{
+	background-image: linear-gradient(rgba(169, 166, 166, 0.68),rgba(169, 166, 166, 0.68)), url(img/event-hero.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	
+}
+
+.hero-textbox{
+	position:absolute;
+	width:1140px;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+
+}
+
+.logo{
+	height: 100px;
+	width: auto; 
+	float:left;
+	margin-top:20px;
+	
+}
+
+.main-nav{
+	float:right;
+	list-style: none;
+	margin-top: 55px;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-left: 40px;
+	
+}
+
+.main-nav li a {
+	padding: 8px 0;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.2s;
+}
+
+.main-nav li a: hover{
+	border-bottom: 2px solid orange;
+}
+
+/*-------MEALS IMAGES-------*/
+
+.meals-showcase{
+	margin-top: 10%;
+	list-style: none;
+	width: 100%;
+
+}
+
+.meals-showcase li {
+	display: block;
+	float: left;
+	width: 25%;
+
+}
+
+.meal-pics {
+	width: 100%;
+	margin: 0;
+	overflow:hidden;
+	background-color: black;
+	
+
+}
+
+.meal-pics img {
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	transform: scale(1.15);
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-pics img: hover {
+	transform: scale(1.03);
+	opacity: 1;
+	
+}
